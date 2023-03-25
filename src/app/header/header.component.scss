@@ -1,0 +1,35 @@
+.navbar{
+    height: 100%;
+    width: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-left: 10px;
+    // z-index: 9999;
+}
+.bardata{
+
+    height: 76%;
+    width: 90%;
+    background: white;
+    border-radius: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+button{
+    border-radius: 10px;
+    border: 0px;
+    background-color: #9dd7d769;
+    height: 40px;
+    width: 40px;
+}
+
+button:focus, button:hover{
+    background-color: white;
+    color: red;
+}

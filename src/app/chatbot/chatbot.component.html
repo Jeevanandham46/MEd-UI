@@ -1,0 +1,46 @@
+<div class="total1" >
+    <div class="forall1">
+        <div class="top">
+            <mat-icon> chat_bubble_outline</mat-icon>
+            <p class="chatter">TORO BOT</p>
+            <mat-icon class="clear" (click)="cancel()">clear</mat-icon>
+        </div>      
+        
+
+        
+        <div class="forif" #scrollMe [scrollTop]="scrollMe.scrollHeight" style="background: url('assets/backlogo.jpg');background-repeat:no-repeat;background-size:cover">
+            <!-- <div class="frobau" *ngFor="let values of botAndUser">
+                <div class="showmsg" *ngFor="let data of values.user">
+                    <p class="usermessage">{{data.usermsg}}</p>
+
+                </div><br>
+                <div class="botmsg" *ngFor="let value of values.bot">
+                    <p class="botmessage">{{value.botmsg}}</p>
+
+                </div><br>
+            </div> -->
+            <ul class="chat" *ngFor="let values of botAndUser" >
+                <li class="message right" *ngFor="let data of values.user">
+                    <img class="logo" src="assets/user.png" alt="">
+                    <p>{{data.usermsg}}</p>
+                    <mat-hint class="hint">{{time}}</mat-hint>
+                </li>
+                <li class="message left" *ngFor="let value of values.bot">
+                    <img class="logo" src="assets/bot.png" alt="">
+                    <p>{{value.botmsg}}</p>
+                    <mat-hint class="hint">{{time}}</mat-hint>
+                </li>
+                <div class="forextra">
+                    <p class="extrapara" *ngFor="let data of forAdditionalQuestions" (click)="sendMessage(data)">{{data}}</p>
+                </div>
+            </ul>
+            
+        </div>
+        <div class="sendmsg">
+            <div class="input"><input #message placeholder="type your message" [(ngModel)]="filterName" (keyup.enter)="sendMessage(filterName)"></div>
+            <div class="icons">
+                <mat-icon (click)="sendMessage(filterName)">send</mat-icon>
+            </div>
+        </div>
+    </div>
+</div>

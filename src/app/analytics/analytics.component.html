@@ -1,0 +1,33 @@
+<div class="all" >
+    <div class="charts">
+        <div class="chart1">
+            <app-chart style="width: 95%;height:95%;border-radius: 20px !important;" [shopChart]="medicalChart"></app-chart>
+        </div>
+        <div class="chart2">
+            <app-chart style="width: 95%;height:95%;" [medPieChart]="medPieChart"></app-chart>
+        </div>
+        <div class="chart3">
+            <app-chart style="width: 95%;height:95%;" [amountChart]="amountChart"></app-chart>
+        </div>
+    </div>
+    <div class="bottom-part">
+        <div class="left">
+            <div class="rupees">
+                <button matTooltip = 'INR' matTooltipPosition="right" (click)="changeMoney('INR')" >₹</button>
+                <button matTooltip = 'EURO' matTooltipPosition="right" (click)="changeMoney('EURO')" >€</button>
+                <button matTooltip = 'USD' matTooltipPosition="right" (click)="changeMoney('USD')">$</button>
+            </div>
+            <div class="turnover-data">
+                <p style="font-size: 27px;" ><u>TURNOVER</u></p>
+            <p class="turnover">
+                {{turnOver}}
+            </p>
+            </div>
+            
+        </div>
+        <div class="right">
+            <app-chart style="width: 95%;height:95%;" [medicineChart]="medicineChart"></app-chart>
+        </div>
+    </div>
+</div>
+

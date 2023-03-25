@@ -1,0 +1,59 @@
+<div class="alldetails"  >
+    
+    <div class="scroll-shop-details">
+
+        <!-- <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">   -->
+            <div  *ngFor="let image of images" class="slide">  
+                <mat-card style="width: 83%;height:15%;margin-left:5px;margin-top:7px;">
+                    <div class="all"  style="width: 100%;height:100%;display: flex;">
+                        <div class="img">
+                            <img src="assets/{{image.image}}" style="width: 80px;height:80px;">
+                        </div>
+                        <div class="set">
+                            <p class="shop-title">{{image.name}}</p>
+                            <p class="shop-detail-button" (click)="shopDetails(image)" >VIEW DETAILS</p>
+                        </div>
+                    </div>
+                </mat-card>
+                <br>
+            </div>  
+          <!-- </ngx-slick-carousel>  -->
+    </div>
+    <div class="full-details">
+            <div class="shopname">
+                <p>{{shopDetailsData.name}}</p>
+            </div>
+            <br>
+            <div class="shopdetailsall">
+                <span>{{shopDetailsData.Address}}</span>
+                <span>{{shopDetailsData.email}}</span>
+                <span>{{shopDetailsData.phone}}</span>
+            </div>
+            <br>
+            <div class="medicies" >
+                <mat-card class="med-card" *ngFor="let med of shopDetailsData.med" style="display: flex;flex-direction:column">
+                    <div class="image-name">
+                        <img src="assets/{{med.img}}" style="width: 100px;height:100px">
+                        <P>{{med.name}}</P>
+                    </div>
+                    <br>
+                    <div class="description">
+                    <p>{{med.description}}</p>
+                </div>
+                    
+                    <div  class="add-to-cart-btn">
+                        <p class="addcart" style="cursor: pointer;" (click)="sendSelectedData(med,shopDetailsData.name)" >Add to cart</p>
+                    </div>
+                     <div class="count" *ngIf="med.qty != 0"   >
+                <mat-icon (click)="priceChange('remove',med)" >remove</mat-icon>
+            {{med.qty}}
+                <mat-icon (click)="priceChange('add',med)" >add</mat-icon>
+            </div>
+                </mat-card>
+                
+            </div>
+    </div> 
+
+    
+</div>
+

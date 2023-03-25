@@ -1,0 +1,22 @@
+<div class="total" style="overflow: hidden;width:100%;height:100%" *ngIf="!noData">
+    <div class="title" style="display: flex;align-items:center;width:100%;justify-content: center;font-size: 40px;height:10%;">HISTORY
+    </div><br>
+    <div class="all">
+        <mat-card *ngFor="let x of dataOfhistory ">
+            <div>
+                <b>SHOPNAME : </b> {{x.shopname}}
+            </div>
+            <div class="med">
+                <b>MEDICINES</b><span *ngFor="let b of x.medicines"> {{b}},</span>
+            </div>
+            <div class="amt">
+                <b>AMOUNT:</b>{{x.total}}
+            </div>
+        </mat-card>
+    </div>
+</div>
+<div class="nodata" style="width: 100%;height:100%;font-size: 50px;align-items: center;justify-content: center;display: flex;" *ngIf="noData" >
+
+        NO HISTORY TO SHOW
+
+</div>

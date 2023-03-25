@@ -1,0 +1,311 @@
+.total {
+    margin: 0px 0px 0px 0px;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: fixed;
+    z-index: 1;
+}
+
+.forall {
+    background-color: white;
+    overflow: auto;
+    border-radius: 20px;
+    box-shadow: -1px 17px 50px 10px #000000;
+    -webkit-box-orient: vertical;
+    bottom: 440px;
+    position: relative;
+}
+
+.top {
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 19px 0px 0px 3px;
+}
+
+.top mat-icon {
+    font-size: 26px;
+    margin: 0px;
+}
+
+.chatter {
+    font-size: 20px;
+    font-family: play;
+    animation: tobi 3s linear infinite;
+}
+
+@keyframes tobi {
+    0% {
+        background: -webkit-linear-gradient(180deg, #f24841, black, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    25%{
+        background: -webkit-linear-gradient(180deg,black,#f24841,black );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    50% {
+        background: -webkit-linear-gradient(180deg,black,black,#f24841 );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    75%{
+        background: -webkit-linear-gradient(180deg,black,#f24841,black );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        background: -webkit-linear-gradient(180deg, #f24841, black, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.forif {
+    width: 320px;
+    height: 408px;
+    overflow: auto;
+    background-repeat: no-repeat;
+    // background: url('assets/backlogo.jpg');
+    background-size: cover;
+    background-color: black;
+}
+
+.frobau {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+    width: 90%;
+    margin: 0px 0px 0px 12px;
+}
+
+.showmsg {
+    float: right;
+    border: thin solid black;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    width: 47%;
+    background: white;
+    color: #f24841;
+}
+
+.usermessage {
+    padding: 10px 10px 0px 10px;
+    font-size: 20px;
+    font-family: play;
+}
+
+.botmessage {
+    padding: 10px 10px 0px 10px;
+    font-size: 20px;
+    font-family: play;
+}
+
+.botmsg::after {
+    content: "\a";
+    white-space: pre;
+    float: left;
+}
+
+.botmsg {
+    border: thin solid black;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    width: 47%;
+    background: white;
+    color: #f24841;
+}
+
+.sendmsg {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 45px;
+}
+
+.input {
+    width: 83%;
+}
+
+input {
+    width: 100%;
+    height: 84%;
+    border: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: none;
+}
+
+.icons {
+
+    height: 100%;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+/* .icons:hover{
+    background-color: black;
+    height: 100%;
+    border-radius: 30px;
+    flex-direction: row;
+    text-align: center;
+    width: 14%;
+    color: white;
+    transition: 1s linear;
+} */
+
+mat-icon {
+    font-size: 24px;
+    text-align: center;
+    margin: 9px 2px 0px 0px;
+}
+
+
+.forbotimg {
+    width: 60px;
+    height: 60px;
+    border: thin solid black;
+    border-radius: 30px;
+    background: white;
+    /* animation: bot 3s linear infinite; */
+    font-size: 45px;
+    color: #f24841;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+.forbotimg:hover {
+    opacity: 5;
+}
+
+
+@keyframes bot {
+    0% {
+        transform: translate(0, 0px);
+        font-size: 40px;
+    }
+
+    50% {
+        transform: translate(0, 0px);
+        color: #f24841;
+        font-size: 45px;
+    }
+
+    100% {
+        transform: translate(0, 0px);
+        font-size: 40px;
+    }
+
+}
+
+.forbotimg i {
+    color: #000000;
+    animation: bot 3s cubic-bezier(1, 1, 0, 0.01) infinite;
+}
+
+
+
+/* new */
+.chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    padding: 0;
+    margin: 16px 0px 0px 0px;
+}
+
+.message {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    box-shadow: 0px 15px 5px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.message.left {
+    padding: 15px 20px 15px 70px;
+}
+
+.message.right {
+    align-self: flex-end;
+    padding: 15px 70px 15px 20px;
+}
+
+.logo {
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.7);
+    object-fit: cover;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    width: 50px;
+    height: 50px;
+}
+
+.message.right .logo {
+    left: auto;
+    right: 10px;
+}
+
+.message p {
+    margin: 0;
+    font-weight: bold;
+    font-family: aldrich;
+}
+
+::ng-deep .boticons {
+    background-color: #f24841;
+    font-size: 18px;
+    font-family: aldrich;
+}
+.forextra{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.extrapara{
+    border: thin solid #f24841;
+    padding: 5px;
+    background: white;
+    font-family: aldrich;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.extrapara:hover{
+    border-radius: 20px;
+    box-shadow: 0px 1px 11px 4px white;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.hint{
+    color: #f24841;
+    font-size: 10px;
+    font-family: aldrich;
+    border: thin solid #f24841;
+    padding: 3px;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}

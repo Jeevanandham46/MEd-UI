@@ -1,0 +1,22 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="navbar">
+    <div class="bardata">
+        <img src="assets/Logo.png" style="width: 70px;"  >
+        <button matTooltip="HOME" matTooltipPosition="right" (click)="toHome()" ><mat-icon >home</mat-icon></button>
+
+        <button matTooltip="CONTACT US" matTooltipPosition="right" (click)="toContact()" ><mat-icon>contact_phone</mat-icon></button>
+
+        <button matTooltip="MEDICALS" matTooltipPosition="right" (click)="toShop()" ><mat-icon>location_city</mat-icon></button>
+
+        <button matTooltip="CART" matTooltipPosition="right" (click)="toCart()"  ><mat-icon>shopping_cart</mat-icon></button>
+
+        <button matTooltip="LOGIN / REGISTER" matTooltipPosition="right" (click)="openSignUp()" *ngIf="login"  ><mat-icon>fingerprint</mat-icon></button>
+
+        <button matTooltip="PROFILE" matTooltipPosition="right"  *ngIf="profile" (click)="toProfile()" ><mat-icon>person</mat-icon></button>
+
+        <button matTooltip="ANALYTICS" matTooltipPosition="right" *ngIf="analytics"   (click)="toAnalytics()" ><mat-icon>bar_chart</mat-icon></button>
+
+        <button matTooltip="HISTORY" matTooltipPosition="right"    (click)="toHistory()" ><mat-icon>history</mat-icon></button>
+
+    </div>
+</div>

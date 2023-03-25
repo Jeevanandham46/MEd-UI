@@ -1,0 +1,53 @@
+<div class="all" *ngIf="!cartEmpty">
+    <div class="left">
+        <mat-card class="cart-item" *ngFor="let data of medData.medicine " >
+            <img src="assets/{{data.img}}" style="width: 80px;height:80px;" >
+            <p>{{data.name}}</p>
+            <p>₹{{data.price}}</p>
+            <div class="count">
+                <mat-icon (click)="priceChange('remove',data)" >remove</mat-icon>
+                {{data.qty}}
+                <mat-icon (click)="priceChange('add',data)" >add</mat-icon>
+            </div>
+            
+        </mat-card>
+    </div>
+    <div class="right">
+        <div class="top">
+<div class="shope">
+    <p>{{medData.name}}</p>
+</div>
+<div class="bill">
+<mat-card class="bill-items">
+    <div class="bill-left">
+        <p> Sub Total</p>
+         <p>Estimated GST</p>
+         <p>Shipping Cost</p>
+         <p> Estimated Total</p>
+ </div>
+ <div class="bill-right">
+     <p>₹{{totalAmount}}</p>
+     <p>₹{{gstAmount}}</p>
+     <p>₹{{shippingCost}}</p>
+     <p>₹{{estimatedTotal}}</p>
+ </div>
+</mat-card>
+<button (click)="checkOut()" >CHECKOUT</button>
+</div>
+            
+        </div>
+        <div class="bottom" *ngIf="cardDetails">
+            <P class="crd-det" style="font-size: 25px;"><u>Enter Card details</u></P>
+            <form [formGroup]="formData" >
+            <input type="text" formControlName='card' placeholder="Card Number" maxlength="16" minlength="16">
+            <p class="error-msg" *ngIf="errorMsg" >Enter 16 digit</p>
+            <input type="text" formControlName='cvv' placeholder="CVV Number" maxlength="3" min="3" >
+            <p class="error-msg" *ngIf="errorMsg" >Enter 3 digit</p>
+            </form>
+            <button (click)="payment()" >PAY ₹{{estimatedTotal}}</button>
+        </div>
+    </div>
+</div>
+<div class="empty-cart" *ngIf="cartEmpty">
+    <img src="assets/emptycart.png" style="width: 60%;height:100%;">
+</div>

@@ -1,0 +1,24 @@
+<div class="alldata">
+    <div class="signup" *ngIf="!register">
+        <p style="font-size:large" >SIGN IN</p>
+        <form [formGroup]="formData" >
+            <input type="email" formControlName='email' placeholder="email"  >
+            
+            <input type="password" formControlName='password' placeholder="password">
+            <p class="error-msg" *ngIf="errorMsg" >Email or password is wrong</p>
+        </form>
+        <button (click)="formDataSend()" >SIGN IN</button>
+        <p>New User ? <span (click)="changeForm('reg')" style="cursor:pointer" >REGISTER</span></p>
+    </div>
+    <div class="register" *ngIf="register">
+        <p style="font-size:large" >REGISTER</p>
+        <form [formGroup]="formDataReg" >
+            <input type="text" formControlName='username'placeholder="username" >
+            <input type="email" formControlName='email' placeholder="email">
+            <input type="password" formControlName='password' placeholder="passoword">
+            <p class="error-msg" *ngIf="errorMsgReg" >Email id already exist</p>
+        </form>
+        <button (click)="formDataSendReg()" >REGISTER</button>
+        <p>Existing User ? <span (click)="changeForm('sign')" style="cursor:pointer" > SIGNIN</span></p>
+    </div>
+</div>

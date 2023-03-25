@@ -1,0 +1,80 @@
+.all{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    width: 96%;
+    height:48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left,.right{
+    width: 49%;
+    height:100%;
+    border: 3px solid #d7efef;
+    border-radius: 10px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:3px
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom{
+    
+    width: 96%;
+    height:48%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.counter{
+    width: 24%;
+    height: 89%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #9dd7d769;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.items::before {
+    content: "Where the art of medicine is loved, there is also love for humanity";
+    animation: animate infinite 20s linear;
+    // padding-left: 10px;
+    margin: 2px;
+    color: red;
+    font-family: fantasy;
+        font-size: 29px;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "Medicine aims to prevent disease plus prolong life; the idea of medicine is to eliminate the need of a physician";
+    }
+
+    25% {
+        content: "Medicines cure diseases, but only doctors can cure patients.";
+    }
+    50%{
+        content: "Declare the past, diagnose the present, foretell the future.";
+    }
+    75% {
+        content: "Always laugh when you can, it is cheap medicine.";
+    }
+}

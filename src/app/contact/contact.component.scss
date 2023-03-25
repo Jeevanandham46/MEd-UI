@@ -1,0 +1,227 @@
+/* body{
+    overflow-y: hidden;
+}
+.social a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: cursive;
+    transition: 1s;
+}
+
+.social{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.social img{
+    width: 50px;
+    height: 50px;
+}
+
+.social a:hover{
+    color: #f24841;
+    transition: 1s;
+}
+.fb, .ins, .twt, .yt, .lnkd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-family: monospace;
+    width: 100%;
+}
+mat-icon{
+    margin: 10px 0px 0px 175px;
+    font-size: 40px;
+}
+.hr{
+    width: 10%;
+    opacity: 0.5;
+}
+textarea{
+    width: 311px;
+    height: 44px;
+    border: 1px solid black;
+    border-radius: 11px;
+}
+.mail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 149px;
+    align-items: center;
+} */
+
+/*new*/
+.forall{
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.toptext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.cu{
+  font-family: fantasy;
+  font-size: 25px;
+}
+.rem{
+font-family: cursive;
+font-size: 15px;
+}
+.botcont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #e9322A;
+    height: 320px;
+}
+.left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.contactleft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.topcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.topcon p{
+    
+font-family: cursive;
+font-size: 15px;
+}
+.contactleft .con{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.topcon img{
+    width: 90px;
+}
+.midcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    height: 67%;
+}
+.midcon p{
+    
+    display: flex;  
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    transition: 1s;
+}
+.midcon p:hover{
+    transition: 1s;
+    padding: 10px;
+    border-radius: 10px;
+}
+.midcon p mat-icon{
+    color: #e4e4e4;
+}
+.phone{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-start;
+}
+.phone span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    color: white;
+}
+.f, .i, .t, .y, .l{
+    height: 26px;
+    width: 26px;
+    transition: 1s;
+    font-family: monospace;
+    color: #f24841;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+}
+.right mat-card{
+    height: 100%;
+    border: 1px solid black;
+    box-shadow: -1px 17px 50px 10px #00000029;
+}
+.right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formtext{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.mat-step-header .mat-step-icon-state-edit{
+    background-color: #f24841;
+}
+::ng-deep .ftt {
+    background-color: #4064ac;
+    font-size: 15px;
+    font-family: play;
+}
+::ng-deep .itt {
+    background:linear-gradient(90deg, #c210df,#fa2118,#febd17);
+   font-size: 15px;
+   font-family: play;
+}
+::ng-deep .ttt {
+    background-color: #1c9ceb;
+    font-size: 15px;
+    font-family: play;
+}
+::ng-deep .ytt {
+    background-color: #f70000;
+    font-size: 15px;
+    font-family: play;
+}
+::ng-deep .ltt {
+    background-color: #0077b0;
+    font-size: 15px;
+    font-family: play;
+}
+

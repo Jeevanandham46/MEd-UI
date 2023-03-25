@@ -1,0 +1,126 @@
+<!-- <div class="social">
+    <i class="fa-brands fa-facebook"></i>
+    <div class="fb">
+        <img src="../../assets/Images/fb_logo.png"><br>
+        <a href="https://www.facebook.com">Akatsuki_Book</a>
+    </div>
+    <div class="ins">
+        <img src="../../assets/Images/inst_logo.png"><br>
+        <a href="https://www.instagram.com">@Akatsuki_Family</a>
+    </div>
+    <div class="yt">
+        <img src="../../assets/Images/yt_logo.png"><br>
+        <a href="https://www.youtube.com">Akatsuki_Vlog</a>
+    </div>
+    <div class="twt">
+        <img src="../../assets/Images/twt_logo.png"><br>
+        <a href="https://www.twitter.com">@Akatsuki_twt</a>
+    </div>
+    <div class="lnkd">
+        <img src="../../assets/Images/lnkd_logo.png"><br>
+        <a href="https://www.linkedin.com">Akatsuki</a>
+    </div>
+</div>
+<div class="contact"></div>
+
+<div class="cont">
+    <div class="call">
+        <mat-icon class="icon"> call</mat-icon>
+        <p class="number"> 044 - 420 108 52 | 044 - 987 644 12</p>
+    </div>
+    <hr class="hr">
+    <div class="mail">
+        <p class="grat">Tell us about your experience</p>
+        <textarea placeholder="Love to hear from you !"></textarea>
+        <button mat-raised-button (click)="send()">Send</button>
+    </div>
+</div> -->
+
+
+<div class="forall">
+    <div class="toptext">
+        <p class="cu">CONTACT US</p>
+        <p class="rem">Any Questions or Remarks ? just write Us a Message</p>
+    </div>
+    <div class="botcont">
+        <div class="left">
+                <div class="contactleft">
+                    <div class="topcon">
+                        <p class="con">Contact Information</p>
+                        <p class="alt">Fill the form and our team will get back to you in 24 hours.</p>
+                    </div>
+                    <div class="midcon">
+                        <p class="phone">
+                            <mat-icon> phone</mat-icon><span>+91 9078563412</span>
+                        </p>
+                        <p class="phone">
+                            <mat-icon> mail</mat-icon> <span>help@dose.com</span>
+                        </p>
+                        <p class="phone">
+                            <mat-icon> location_on</mat-icon><span>147 Baker Street</span>
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <div class="right">
+            <mat-card>
+                <form class="formname" autocomplete="off">
+                    <p class="formtext"><u>FILL THE BELOW FORM</u></p>
+                    <mat-stepper orientation="vertical" #stepper autocomplete="off">
+                        <!-- <mat-step [stepControl]="firstFormGroup">
+                            <form [formGroup]="firstFormGroup">
+                                <ng-template matStepLabel>Name</ng-template>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Name</mat-label>
+                                    <input matInput placeholder="Ex:Rohith" formControlName="Name" required
+                                        autocomplete="off">
+                                </mat-form-field>
+                                <div>
+                                    <button mat-button matStepperNext>Next</button>
+                                </div>
+                            </form>
+                        </mat-step> -->
+                        <mat-step [stepControl]="secondFormGroup">
+                            <form [formGroup]="secondFormGroup">
+                                <ng-template matStepLabel>Email</ng-template>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Email</mat-label>
+                                    <input matInput formControlName="Email" placeholder="Ex:name@gail.com" required
+                                        autocomplete="off" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.][a-zA-Z]{2,}">
+                                </mat-form-field>
+                                <div>
+                                    <button mat-button matStepperPrevious>Back</button>
+                                    <button mat-button matStepperNext>Next</button>
+                                </div>
+                            </form>
+                        </mat-step>
+                        <mat-step [stepControl]="thirdFormGroup">
+                            <form [formGroup]="thirdFormGroup">
+                                <ng-template matStepLabel>Problem/Compliment</ng-template>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Problem/Compliment</mat-label>
+                                    <textarea matInput formControlName="Query"
+                                        placeholder="Ex. It makes me feel..."></textarea>
+
+                                </mat-form-field>
+                                <div>
+                                    <button mat-button matStepperPrevious>Back</button>
+                                    <button mat-button matStepperNext (click)="next()">Next</button>
+                                </div>
+                            </form>
+                        </mat-step>
+                        <mat-step>
+                            <ng-template matStepLabel>Done</ng-template>
+                            <p>You are now done.</p>
+                            <div>
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button (click)="stepper.reset()">Reset</button>
+                            </div>
+                        </mat-step>
+                    </mat-stepper>
+                </form>
+            </mat-card>
+
+        </div>
+    </div>
+</div>

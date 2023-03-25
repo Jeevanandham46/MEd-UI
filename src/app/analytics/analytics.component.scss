@@ -1,0 +1,89 @@
+.all{
+    width: 100%;
+    height:100%;
+}
+.charts{
+    width: 100%;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.chart1,.chart2,.chart3{
+    width: 30%;
+    height: 90%;
+    background-color: #9dd7d769;
+    border-radius: 10px;
+     display: flex;
+     align-items: center;
+    justify-content: center;
+}
+
+.bottom-part{
+    width: 100%;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left,.right{
+    border:5px solid #9dd7d769;
+    border-radius:10px;
+    width :46%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left{
+    flex-direction: row;
+    background-color: #9dd7d769;
+    border:0px solid #9dd7d769;
+
+}
+.rupees{
+    width: 10%;
+    height : 97%;
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.turnover-data{
+    width:80%;
+    height:90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+}
+.turnover {
+	animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+    font-family: play;
+    font-size: 25px;
+}
+
+@keyframes floating {
+	0% { transform: translate(0, 0px);font-size: 25px; }
+	50% { transform: translate(0,0px); color: #f24841;font-size: 27px; }
+	100% { transform: translate(0, 0px);font-size: 25px; }
+}
+
+button{
+    width:40px;
+    height:40px;
+    background-color: white;
+    color:red;
+    border: 0px;
+    font-size:15px;
+    border-radius:20px
+}
